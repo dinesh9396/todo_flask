@@ -11,7 +11,7 @@ dictdiffer==0.9.0
 distlib==0.3.7
 dnspython
 filelock==3.12.2
-Flask==2.3.2
+Flask
 Flask-Cors==4.0.0
 Flask-PyMongo==2.3.0
 idna==3.4
