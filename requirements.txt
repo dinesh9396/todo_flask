@@ -31,4 +31,4 @@ tzdata==2023.3
 tzlocal==5.0.1
 urllib3==1.25.11
 virtualenv==20.24.1
-Werkzeug==2.3.6
+Werkzeug
