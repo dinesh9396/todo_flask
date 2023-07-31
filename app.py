@@ -11,7 +11,14 @@ app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb+srv://mldinesh0:DPGq3M5xFkYGKfD6@cluster0.mnugi39.mongodb.net/mydatabase?retryWrites=true&w=majority&tlsAllowInvalidCertificates=true"
 
 mongo = PyMongo(app)
-CORS(app, resources={r"/*": {"origins": "https://storied-lebkuchen-0cca06.netlify.app"}})
+# CORS(app, resources={r"/*": {"origins": "https://storied-lebkuchen-0cca06.netlify.app"}})
+CORS(app, resources={r"/*": {"origins": "*"}}, 
+     send_wildcard=True, 
+     allow_headers=[
+         "Content-Type", 
+         "Authorization", 
+         "Access-Control-Allow-Credentials"])
+
 
 
 @app.route('/todos', methods=['GET'])
